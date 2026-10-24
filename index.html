@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dahlia — Botanical Café & Nursery</title>
+  <meta name="description" content="A peaceful little garden hidden inside the city. Artisan coffee, seasonal botanical food, handmade ceramics, lush indoor greenery, and slow mornings at Dahlia.">
+  <meta name="theme-color" content="#263D30">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dahlia — Botanical Café & Nursery">
+  <meta property="og:description" content="Come for the coffee. Stay for the calm. A cozy botanical sanctuary surrounded by lush plants, warm timber, and slow living.">
+  <meta property="og:image" content="images/hero_cafe.jpg">
+
+  <!-- Google Fonts Preconnect & Editorial Fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- =======================================================================
+       1. NAVIGATION BAR
+       ======================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#hero" class="brand" aria-label="Dahlia Homepage">
+        <span class="brand-title">DAHLIA</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">HOME</a></li>
+          <li><a href="#menu" class="nav-link">SHOP</a></li>
+          <li><a href="#story" class="nav-link">ABOUT</a></li>
+          <li><a href="#visit" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Search Icon -->
+        <button class="nav-icon-btn" aria-label="Search" id="search-trigger-btn" data-modal-target="search-modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <!-- Account Icon -->
+        <button class="nav-icon-btn" aria-label="User Account" data-modal-target="reservation-modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+        <!-- Shopping Bag Icon -->
+        <button class="nav-icon-btn" aria-label="Shopping Bag" data-modal-target="menu-modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </button>
+        <!-- Mobile Toggle Button -->
+        <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#menu" class="mobile-nav-link">Shop</a></li>
+      <li><a href="#story" class="mobile-nav-link">About</a></li>
+      <li><a href="#visit" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <a href="#visit" class="btn btn-outline-light mobile-nav-close">Visit Dahlia</a>
+  </div>
+
+  <main id="main-content">
+
+    <!-- =======================================================================
+         2. HERO SECTION
+         ======================================================================= -->
+    <section class="hero-section" id="hero" aria-label="Welcome to Dahlia">
+      <div class="hero-bg-container">
+        <img src="images/hero_storefront.jpg" alt="Dahlia storefront with grand black metal frame glass doors, lush green plants, and warm light" class="hero-bg-img" loading="eager">
+        <div class="hero-left-vignette"></div>
+        <div class="hero-top-vignette"></div>
+      </div>
+
+      <div class="hero-content-wrapper">
+        <div class="hero-editorial-block reveal-fade-up">
+          <div class="hero-eyebrow-line"></div>
+          <div class="hero-eyebrow-text">
+            <span>TIMELESS STYLE</span>
+            <span>FOR EVERY YOU</span>
+          </div>
+          <h1 class="hero-brand-headline">DAHLIA</h1>
+          <p class="hero-brand-subhead">Where Style Feels Like Home</p>
+          <a href="#menu" class="hero-shop-btn" id="hero-shop-btn">
+            <span>SHOP NOW</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Minimalist Capsule Scroll Indicator -->
+      <a href="#story" class="hero-scroll-indicator" aria-label="Scroll down to explore">
+        <div class="scroll-pill">
+          <span class="scroll-chevron"></span>
+        </div>
+      </a>
+    </section>
+
+    <!-- =======================================================================
+         3. INTRODUCTORY EDITORIAL SECTION
+         ======================================================================= -->
+    <section class="editorial-intro-section" id="story" aria-label="Our Story and Philosophy">
+      <!-- Botanical Edge Decor -->
+      <div class="section-edge-decor edge-left" aria-hidden="true"></div>
+      <div class="section-edge-decor edge-right" aria-hidden="true"></div>
+      <div class="container">
+        <div class="editorial-grid">
+          
+          <!-- Large Editorial Photograph -->
+          <div class="editorial-image-col reveal-fade-up">
+            <div class="editorial-image-frame">
+              <img src="images/editorial_story.jpg" alt="Dahlia greenhouse café dining area with lush hanging plants, wooden spindle chairs with botanical cushions, and sunlit pergola roof" loading="lazy">
+              <div class="image-stamp">
+                <span>EST. 2021</span>
+                <strong>DAHLIA GREENHOUSE</strong>
+                <span>SANCTUARY &amp; ROASTERY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial Story Typesetting -->
+          <div class="editorial-text-col reveal-fade-up">
+            <span class="eyebrow">MORE THAN A CAFÉ</span>
+            <h2 class="editorial-heading">Come for the coffee. Stay for the calm.</h2>
+            <p class="editorial-lead">Some places make you slow down without asking. Surrounded by leafy corners, earthy textures, and the comforting smell of freshly brewed coffee, this is a little space to pause, reconnect, and enjoy the simple things.</p>
+            <p class="editorial-subtext">Every wooden shelf was built by hand from reclaimed cedar, every ceramic cup thrown by local potters, and every Monstera and fern nurtured to create a breathing sanctuary right in the heart of our busy neighborhood.</p>
+            
+            <a href="#" class="text-link" data-modal-target="story-modal" id="about-us-link">A little about us ↗</a>
+
+            <div class="editorial-badges">
+              <div class="badge-item">
+                <span class="badge-number">120+</span>
+                <span class="badge-label">Nurtured Plant Species</span>
+              </div>
+              <div class="badge-item">
+                <span class="badge-number">100%</span>
+                <span class="badge-label">Direct Trade Coffee</span>
+              </div>
+              <div class="badge-item">
+                <span class="badge-number">Daily</span>
+                <span class="badge-label">Fresh Sourdough Bakes</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. SIGNATURE MENU SECTION (WITH CIRCULAR PLATE CARDS & COMPACT ROWS)
+         ======================================================================= -->
+    <section class="menu-section" id="menu" aria-label="Dahlia Botanical Menu">
+      <!-- Botanical Edge Decor -->
+      <div class="section-edge-decor edge-left" aria-hidden="true"></div>
+      <div class="section-edge-decor edge-right" aria-hidden="true"></div>
+      <div class="container">
+        
+        <div class="section-header-editorial reveal-fade-up">
+          <span class="eyebrow">DAHLIA NURSERY + CAFÉ</span>
+          <h2 class="section-title">The Seasonal Menu</h2>
+          <p class="section-subtitle">Wholesome starters, artisanal mains, Detroit-style crusts, house-baked brioche desserts, and refreshing botanical brews.</p>
+        </div>
+
+        <!-- Category Tabs (As shown in Reference Mockup) -->
+        <div class="menu-tabs reveal-fade-up" role="tablist">
+          <button class="menu-tab-btn active" data-category="all" role="tab" aria-selected="true">All Offerings</button>
+          <button class="menu-tab-btn" data-category="starters" role="tab" aria-selected="false">Starters &amp; Salads</button>
+          <button class="menu-tab-btn" data-category="mains" role="tab" aria-selected="false">Artisanal Mains</button>
+          <button class="menu-tab-btn" data-category="pizza" role="tab" aria-selected="false">Detroit Crusts</button>
+          <button class="menu-tab-btn" data-category="desserts" role="tab" aria-selected="false">House Desserts</button>
+          <button class="menu-tab-btn" data-category="drinks" role="tab" aria-selected="false">Beverages &amp; Brews</button>
+        </div>
+
+
+        <!-- ===================================================================
+             1. CIRCULAR PLATE CARDS VIEW (ACTIVE DEFAULT)
+             =================================================================== -->
+        <div class="menu-plate-grid reveal-fade-up" id="menu-plate-grid">
+          
+          <!-- Card 1: Lotus French Toast (Desserts) -->
+          <article class="plate-card" data-category="desserts">
+            <div class="plate-circle-wrap">
+              <span class="plate-badge">INSTAGRAM ICON</span>
+              <img src="images/plate_toast.jpg" alt="Lotus French Toast with whipped cream and Biscoff" class="plate-circle-img" loading="lazy">
+            </div>
+            <h3 class="plate-card-title">Lotus French Toast</h3>
+            <span class="plate-card-price">Rs. 1,545</span>
+            <p class="plate-card-desc">House baked brioche soaked in egg bath, layered with Lotus Biscoff spread and velvety whipped cream.</p>
+            <button class="plate-order-btn" data-modal-target="menu-modal">Explore &amp; Order</button>
+          </article>
+
+          <!-- Card 2: Bang Bang Prawns (Starters - Featured Center Card with Rose Glow) -->
+          <article class="plate-card featured-card" data-category="starters">
+            <div class="plate-circle-wrap">
+              <span class="plate-badge">BREAKFAST FAVORITE</span>
+              <img src="images/plate_prawns.jpg" alt="Crispy Bang Bang Prawns with sriracha honey sauce" class="plate-circle-img" loading="lazy">
+            </div>
+            <h3 class="plate-card-title">Bang Bang Prawns</h3>
+            <span class="plate-card-price">Rs. 2,095</span>
+            <p class="plate-card-desc">Crispy batter-fried jumbo prawns tossed in Dahlia's signature sriracha honey glaze, lime, and scallions.</p>
+            <button class="plate-order-btn" data-modal-target="menu-modal">Explore &amp; Order</button>
+          </article>
+
+          <!-- Card 3: Molten Lava Cake (Desserts) -->
+          <article class="plate-card" data-category="desserts">
+            <div class="plate-circle-wrap">
+              <span class="plate-badge">DECADENT</span>
+              <img src="images/menu_dessert.jpg" alt="Warm chocolate molten lava cake with vanilla ice cream" class="plate-circle-img" loading="lazy">
+            </div>
+            <h3 class="plate-card-title">Molten Lava Cake</h3>
+            <span class="plate-card-price">Rs. 1,545</span>
+            <p class="plate-card-desc">Classic dark chocolate lava cake with warm molten center, rich chocolate ganache, and Madagascar vanilla bean ice cream.</p>
+            <button class="plate-order-btn" data-modal-target="menu-modal">Explore &amp; Order</button>
+          </article>
+
+          <!-- Card 4: Whipped Ricotta Detroit Pizza (Detroit Crusts) -->
+          <article class="plate-card" data-category="pizza">
+            <div class="plate-circle-wrap">
+              <span class="plate-badge">DETROIT CRUST</span>
+              <img src="images/plate_pizza.jpg" alt="Detroit Style Whipped Ricotta and Pesto Pizza" class="plate-circle-img" loading="lazy">
+            </div>
+            <h3 class="plate-card-title">Whipped Ricotta Pizza</h3>
+            <span class="plate-card-price">Rs. 2,295</span>
+            <p class="plate-card-desc">Thick, crispy rectangular Detroit crust topped with grilled chicken, fragrant basil pesto, and fresh whipped lemon ricotta.</p>
+            <button class="plate-order-btn" data-modal-target="menu-modal">Explore &amp; Order</button>
+          </article>
+
+          <!-- Card 5: Tenderloin Steak with Confit Arugula (Mains) -->
+          <article class="plate-card" data-category="mains">
+            <div class="plate-circle-wrap">
+              <span class="plate-badge">PREMIUM CUT</span>
+              <img src="images/plate_steak.jpg" alt="Cured tenderloin steak with fondant potatoes" class="plate-circle-img" loading="lazy">
+            </div>
+            <h3 class="plate-card-title">Tenderloin Steak</h3>
+            <span class="plate-card-price">Rs. 3,495</span>
+            <p class="plate-card-desc">Cured tenderloin medallion with confit arugula, cherry tomatoes, sauteed wild mushrooms, and buttery fondant potatoes.</p>
+            <button class="plate-order-btn" data-modal-target="menu-modal">Explore &amp; Order</button>
+          </article>
+
+          <!-- Card 6: Classic Caesar Salad (Starters & Salads) -->
+          <article class="plate-card" data-category="starters">
+            <div class="plate-circle-wrap">
+              <span class="plate-badge">GARDEN FRESH</span>
+              <img src="images/plate_salad.jpg" alt="Classic Caesar Salad with grilled chicken and parmesan" class="plate-circle-img" loading="lazy">
+            </div>
+            <h3 class="plate-card-title">Classic Caesar Salad</h3>
+            <span class="plate-card-price">Rs. 1,450</span>
+            <p class="plate-card-desc">Crisp greenhouse romaine, sun-dried tomatoes, house croutons, aged shaved parmesan, and tender grilled chicken breast.</p>
+            <button class="plate-order-btn" data-modal-target="menu-modal">Explore &amp; Order</button>
+          </article>
+
+          <!-- Card 7: Gouda-Fest Smash Burger (Mains) -->
+          <article class="plate-card" data-category="mains">
+            <div class="plate-circle-wrap">
+              <span class="plate-badge">CHEF'S CUT</span>
+              <img src="images/plate_burger.jpg" alt="Gouda-Fest Smash Burger on brioche bun" class="plate-circle-img" loading="lazy">
+            </div>
+            <h3 class="plate-card-title">Gouda-Fest Smash Burger</h3>
+            <span class="plate-card-price">Rs. 2,095</span>
+            <p class="plate-card-desc">Double beef smash patty, melted smoked gouda cheese, homemade sauce, pickles, and jalapenos on toasted brioche.</p>
+            <button class="plate-order-btn" data-modal-target="menu-modal">Explore &amp; Order</button>
+          </article>
+
+          <!-- Card 8: Strawberry Mojito (Beverages) -->
+          <article class="plate-card" data-category="drinks">
+            <div class="plate-circle-wrap">
+              <span class="plate-badge">SIGNATURE REFRESHER</span>
+              <img src="images/plate_mojito.jpg" alt="Strawberry Mojito with mint leaves and fresh lime" class="plate-circle-img" loading="lazy">
+            </div>
+            <h3 class="plate-card-title">Strawberry Mojito</h3>
+            <span class="plate-card-price">Rs. 795</span>
+            <p class="plate-card-desc">Muddled greenhouse garden mint leaves, wild strawberry puree, fresh lime juice, and effervescent sparkling soda.</p>
+            <button class="plate-order-btn" data-modal-target="menu-modal">Explore &amp; Order</button>
+          </article>
+
+          <!-- Card 9: Iced Caramel Macchiato (Beverages) -->
+          <article class="plate-card" data-category="drinks">
+            <div class="plate-circle-wrap">
+              <span class="plate-badge">HOUSE ROAST</span>
+              <img src="images/menu_latte.jpg" alt="Iced Caramel Macchiato with espresso layers and caramel" class="plate-circle-img" loading="lazy">
+            </div>
+            <h3 class="plate-card-title">Iced Caramel Macchiato</h3>
+            <span class="plate-card-price">Rs. 985</span>
+            <p class="plate-card-desc">Double shot espresso poured over chilled whole or oat milk, vanilla bean infusion, and golden salted caramel drizzle.</p>
+            <button class="plate-order-btn" data-modal-target="menu-modal">Explore &amp; Order</button>
+          </article>
+
+        </div>
+
+                <div class="menu-cta-wrap reveal-fade-up" style="margin-top: 54px; text-align: center;">
+          <button class="btn btn-primary" data-modal-target="menu-modal" id="full-menu-btn">View Complete Menu Directory (All 70+ Items)</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. THE LIVING GREENHOUSE ARCHITECTURE — ABSTRACT ORGANIC LINE ART
+         ======================================================================= -->
+    <section class="greenhouse-section" id="greenhouse" aria-label="The Greenhouse Experience">
+      <!-- Botanical Edge Decor (dark variant) -->
+      <div class="section-edge-decor edge-left edge-dark" aria-hidden="true"></div>
+      <div class="section-edge-decor edge-right edge-dark" aria-hidden="true"></div>
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="greenhouse-header reveal-fade-up">
+          <span class="eyebrow eyebrow-light">— THE NURSERY SANCTUARY • GULBERG II, LAHORE</span>
+          <h2 class="greenhouse-title">A cafe built inside a <em class="terracotta-italic">living</em> botanical nursery.</h2>
+          <p class="greenhouse-intro">Dahlia is not merely decorated with greenery—it is an authentic cafe thriving within an active botanical nursery. Guests dine surrounded by mature tropical flora, terracotta collections, and sun-drenched greenhouse rafters.</p>
+        </div>
+
+        <!-- Two-Column Architecture Grid: Organic Blob Artwork (Left) + Editorial Story (Right) -->
+        <div class="greenhouse-architecture-grid">
+          
+          <!-- Left: Abstract Organic Line Art Frame with Greenhouse Photograph -->
+          <div class="greenhouse-art-col reveal-fade-up">
+            <div class="organic-art-frame">
+              <svg class="organic-art-svg" viewBox="0 0 540 520" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="greenhouse-blob-mask">
+                    <path d="M190,36 C270,16 360,42 422,102 C484,162 510,248 480,332 C450,416 374,472 284,488 C194,504 114,474 68,412 C22,350 14,272 38,198 C62,124 110,56 190,36 Z"/>
+                  </clipPath>
+                </defs>
+
+                <!-- Outer Layered Organic Line Art Outlines (Organic flowing contours) -->
+                <path class="blob-line-outermost" 
+                  d="M195,14 C285,-8 382,20 450,86 C518,152 546,250 512,346 C478,442 392,504 292,520 C192,536 100,502 48,432 C-4,362 -12,274 14,190 C40,106 105,36 195,14 Z" 
+                  fill="none" stroke="rgba(101, 140, 110, 0.35)" stroke-width="1.8" stroke-dasharray="6 4"/>
+
+                <path class="blob-line-middle" 
+                  d="M192,26 C278,4 372,32 436,94 C500,156 528,248 496,338 C464,428 384,488 288,504 C192,520 106,488 58,422 C10,356 2,272 26,194 C50,116 106,48 192,26 Z" 
+                  fill="none" stroke="rgba(101, 140, 110, 0.65)" stroke-width="2.4"/>
+
+                <!-- Inner Contour Line that hugs the image border -->
+                <path class="blob-line-inner" 
+                  d="M190,36 C270,16 360,42 422,102 C484,162 510,248 480,332 C450,416 374,472 284,488 C194,504 114,474 68,412 C22,350 14,272 38,198 C62,124 110,56 190,36 Z" 
+                  fill="none" stroke="#2D4D38" stroke-width="3.5"/>
+
+                <!-- Embedded Greenhouse Photo inside Organic Mask -->
+                <g clip-path="url(#greenhouse-blob-mask)">
+                  <image href="images/greenhouse_shelves.jpg" x="0" y="0" width="540" height="520" preserveAspectRatio="xMidYMid slice" class="blob-svg-image"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Right: Living Architecture Editorial Story -->
+          <div class="greenhouse-story-col reveal-fade-up">
+            <span class="eyebrow eyebrow-light">— LIVING ARCHITECTURE</span>
+            <h3 class="story-col-title">Sunlight through timber rafters, roots in <em class="terracotta-italic">living</em> soil.</h3>
+            
+            <p class="story-col-lead">When you step into Dahlia, the bustling streets of Gulberg II melt away into the gentle rustle of monstera leaves and the rich aroma of freshly extracted espresso.</p>
+            
+            <p class="story-col-subtext">Our nursery tables are integrated naturally within active growing beds, where 140+ tropical specimens create an organic microclimate that cools and oxygenates the entire space.</p>
+
+            <div class="greenhouse-feature-list">
+              <div class="feature-bullet-item">
+                <span class="feature-check-icon">✓</span>
+                <div>
+                  <h4 class="feature-item-title">Active Greenhouse Nursery</h4>
+                  <p class="feature-item-desc">High-vaulted conservatory ceilings allowing natural morning and golden-hour light to filter through.</p>
+                </div>
+              </div>
+
+              <div class="feature-bullet-item">
+                <span class="feature-check-icon">✓</span>
+                <div>
+                  <h4 class="feature-item-title">Hand-Thrown Terracotta &amp; Living Roots</h4>
+                  <p class="feature-item-desc">All potted plants, handmade ceramics, and botanical plant care tinctures on our shelves are available to adopt into your own home.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="greenhouse-actions-wrap">
+              <a href="#visit" class="btn btn-outline-light">Ask a Botanist</a>
+              <button class="btn btn-primary" data-modal-target="reservation-modal">Reserve a Table</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. CORNERS OF THE NURSERY CAFÉ — ATMOSPHERIC ORGANIC BLOB FRAMES
+         ======================================================================= -->
+    <section class="moments-section" id="moments" aria-label="Corners of Dahlia Nursery Café">
+      <!-- Botanical Edge Decor (dark variant) -->
+      <div class="section-edge-decor edge-left edge-dark" aria-hidden="true"></div>
+      <div class="section-edge-decor edge-right edge-dark" aria-hidden="true"></div>
+      <div class="container">
+        
+        <div class="section-header-editorial reveal-fade-up">
+          <span class="eyebrow eyebrow-light">— ATMOSPHERIC FRAMES</span>
+          <h2 class="section-title text-light">Corners of the <em class="terracotta-italic">Nursery Cafe</em></h2>
+          <p class="section-subtitle text-light-muted">Every corner at Dahlia holds a different kind of quiet — sunlit, leafy, and always a little magical.</p>
+        </div>
+
+        <div class="atmospheric-blobs-grid">
+          
+          <!-- BLOB CARD 1: The Conservatory Nook -->
+          <div class="atmospheric-blob-card reveal-fade-up">
+            <div class="card-blob-art-wrap">
+              <svg class="card-blob-svg" viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="blob-mask-nook">
+                    <path d="M125,36 C205,14 295,22 368,64 C441,106 450,174 424,230 C398,286 332,296 250,290 C168,284 98,270 54,224 C10,178 8,114 42,68 C74,24 102,40 125,36 Z"/>
+                  </clipPath>
+                </defs>
+                <path class="card-blob-outline-outer" 
+                  d="M125,18 C212,-6 308,4 386,48 C464,92 474,170 444,238 C414,306 340,318 250,310 C160,302 85,286 35,234 C-15,182 -14,108 24,56 C62,4 100,22 125,18 Z" 
+                  fill="none" stroke="rgba(101, 140, 110, 0.45)" stroke-width="2"/>
+                <path class="card-blob-outline-inner" 
+                  d="M125,36 C205,14 295,22 368,64 C441,106 450,174 424,230 C398,286 332,296 250,290 C168,284 98,270 54,224 C10,178 8,114 42,68 C74,24 102,40 125,36 Z" 
+                  fill="none" stroke="#2A4835" stroke-width="3"/>
+                <g clip-path="url(#blob-mask-nook)">
+                  <image href="images/moment_food.jpg" x="0" y="0" width="460" height="300" preserveAspectRatio="xMidYMid slice" class="blob-svg-image"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card-blob-caption">
+              <h3 class="card-blob-title">The Conservatory Nook</h3>
+              <p class="card-blob-desc">Marble tables, bouclé armchairs, and hanging pothos vines in gentle natural daylight.</p>
+            </div>
+          </div>
+
+          <!-- BLOB CARD 2: Hand-Thrown Terracotta -->
+          <div class="atmospheric-blob-card reveal-fade-up">
+            <div class="card-blob-art-wrap">
+              <svg class="card-blob-svg" viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="blob-mask-terracotta">
+                    <path d="M140,32 C220,16 290,40 360,74 C430,108 452,168 430,226 C408,284 345,296 270,288 C195,280 118,288 66,244 C14,200 8,132 38,78 C68,24 112,34 140,32 Z"/>
+                  </clipPath>
+                </defs>
+                <path class="card-blob-outline-outer" 
+                  d="M140,14 C228,-4 304,22 380,58 C456,94 480,164 454,234 C428,304 358,318 274,310 C190,302 106,310 46,258 C-14,206 -20,128 16,66 C52,4 106,16 140,14 Z" 
+                  fill="none" stroke="rgba(184, 117, 88, 0.45)" stroke-width="2"/>
+                <path class="card-blob-outline-inner" 
+                  d="M140,32 C220,16 290,40 360,74 C430,108 452,168 430,226 C408,284 345,296 270,288 C195,280 118,288 66,244 C14,200 8,132 38,78 C68,24 112,34 140,32 Z" 
+                  fill="none" stroke="#B87558" stroke-width="3"/>
+                <g clip-path="url(#blob-mask-terracotta)">
+                  <image href="images/greenhouse_corner.jpg" x="0" y="0" width="460" height="300" preserveAspectRatio="xMidYMid slice" class="blob-svg-image"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card-blob-caption">
+              <h3 class="card-blob-title">Hand-Thrown Terracotta</h3>
+              <p class="card-blob-desc">Artisanal porous clay pots, fiddle leaf figs, and lush monstera collections.</p>
+            </div>
+          </div>
+
+          <!-- BLOB CARD 3: The Glasshouse Entrance -->
+          <div class="atmospheric-blob-card reveal-fade-up">
+            <div class="card-blob-art-wrap">
+              <svg class="card-blob-svg" viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="blob-mask-glasshouse">
+                    <path d="M145,36 C225,16 310,26 376,68 C442,110 448,178 424,232 C400,286 332,295 255,290 C178,285 104,274 58,230 C12,186 10,120 42,74 C74,28 114,42 145,36 Z"/>
+                  </clipPath>
+                </defs>
+                <path class="card-blob-outline-outer" 
+                  d="M145,18 C232,-4 324,6 394,52 C464,98 472,174 444,242 C416,310 338,320 252,312 C166,304 86,290 35,240 C-16,190 -16,114 22,60 C60,6 108,24 145,18 Z" 
+                  fill="none" stroke="rgba(101, 140, 110, 0.45)" stroke-width="2"/>
+                <path class="card-blob-outline-inner" 
+                  d="M145,36 C225,16 310,26 376,68 C442,110 448,178 424,232 C400,286 332,295 255,290 C178,285 104,274 58,230 C12,186 10,120 42,74 C74,28 114,42 145,36 Z" 
+                  fill="none" stroke="#2A4835" stroke-width="3"/>
+                <g clip-path="url(#blob-mask-glasshouse)">
+                  <image href="images/moment_vibe.jpg" x="0" y="0" width="460" height="300" preserveAspectRatio="xMidYMid slice" class="blob-svg-image"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card-blob-caption">
+              <h3 class="card-blob-title">The Glasshouse Entrance</h3>
+              <p class="card-blob-desc">The iconic arched black steel portal welcoming visitors into a leafy haven.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Luxury Sanctuary Experience Callout Banner (Matching Reference Mockup) -->
+        <div class="sanctuary-banner reveal-fade-up">
+          <div class="sanctuary-banner-content">
+            <h3 class="sanctuary-banner-title">Come Experience the Sanctuary in Person</h3>
+            <p class="sanctuary-banner-desc">Open daily from 8:00 AM until Midnight. Enjoy coffee, brunch, or Detroit pizza immersed in nature.</p>
+          </div>
+          <button class="btn btn-outline-light sanctuary-banner-btn" data-modal-target="reservation-modal">BOOK TABLE IN THE NURSERY</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. INTIMATE DATE SPOT — ANIMATED WAVE & CIRCULAR PORTAL
+         ======================================================================= -->
+    <section class="date-spot-section" id="date-spot" aria-label="Intimate Date Spot Experience">
+      <!-- Botanical Edge Decor -->
+      <div class="section-edge-decor edge-left" aria-hidden="true"></div>
+      <div class="section-edge-decor edge-right" aria-hidden="true"></div>
+      
+      <!-- Full-Width Animated Wave Ribbon Background (Moving text along curve behind circle) -->
+      <div class="date-spot-wave-wrap" aria-hidden="true">
+        <svg class="date-spot-wave-svg" viewBox="0 0 1600 620" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <path id="date-wave-center-path" d="M -300, 420 C 60, 470, 320, 290, 720, 290 C 1100, 290, 1300, 60, 1920, 100" fill="none" />
+          </defs>
+
+          <!-- Top Wave Boundary Line -->
+          <path class="wave-boundary-line" 
+            d="M -300, 392 C 60, 442, 320, 262, 720, 262 C 1100, 262, 1300, 32, 1920, 72" 
+            fill="none" stroke="#263D30" stroke-width="1.2" opacity="0.38" />
+
+          <!-- Bottom Wave Boundary Line -->
+          <path class="wave-boundary-line" 
+            d="M -300, 448 C 60, 498, 320, 318, 720, 318 C 1100, 318, 1300, 88, 1920, 128" 
+            fill="none" stroke="#263D30" stroke-width="1.2" opacity="0.38" />
+
+          <!-- Moving Repeating Wave Text -->
+          <text class="date-wave-text" dy="5">
+            <textPath id="date-wave-textpath" href="#date-wave-center-path" startOffset="0%">
+              You, me, and a little more time. · You, me, and a little more time. · You, me, and a little more time. · You, me, and a little more time. · You, me, and a little more time. · You, me, and a little more time. · You, me, and a little more time. · You, me, and a little more time. · You, me, and a little more time. · You, me, and a little more time. · You, me, and a little more time. · 
+              <animate attributeName="startOffset" from="0%" to="-40%" dur="26s" repeatCount="indefinite" />
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
+      <div class="container date-spot-container">
+        <div class="date-spot-wrapper">
+          
+          <!-- Circular Portal Image Column (Matching User Screenshot) -->
+          <div class="date-spot-image-col reveal-fade-up">
+            <div class="date-circle-ring-outer">
+              <div class="date-circle-ring-inner">
+                <img src="images/date_spot.jpg" alt="Two warm cappuccinos and dessert in the intimate date nook" class="date-circle-img" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial Story Column -->
+          <div class="date-spot-content-col reveal-fade-up">
+            <span class="eyebrow">SLOW CONVERSATIONS &mdash;</span>
+            <h2 class="date-spot-tagline">You, me, and a little more time.</h2>
+            <p class="date-spot-desc">For the long conversations, shared desserts, unplanned afternoons, and the kind of moments you wish would last a little longer.</p>
+            <p class="date-spot-desc date-spot-subtext">Tucked away behind climbing pothos and vintage timber screens, our intimate two-person nooks offer private, gentle pockets of calm away from the bustle of the city.</p>
+            
+            <button class="btn btn-primary date-spot-btn" data-modal-target="reservation-modal" id="plan-visit-cta">PLAN YOUR VISIT</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- =======================================================================
+         9. VISIT US SECTION
+         ======================================================================= -->
+    <section class="visit-section" id="visit" aria-label="Visit Dahlia Botanical Café">
+      <!-- Botanical Edge Decor -->
+      <div class="section-edge-decor edge-left" aria-hidden="true"></div>
+      <div class="section-edge-decor edge-right" aria-hidden="true"></div>
+      <div class="container">
+        <div class="visit-grid">
+          
+          <div class="visit-info-col reveal-fade-up">
+            <span class="eyebrow">COME ON IN</span>
+            <h2 class="visit-heading">Your little green escape awaits.</h2>
+            
+            <div class="visit-details-card">
+              
+              <!-- Address -->
+              <div class="detail-block">
+                <span class="detail-icon">📍</span>
+                <div>
+                  <h3 class="detail-meta-title">Location</h3>
+                  <p class="detail-meta-text">14 Cypress Lane, The Old Greenhouse Quarter<br><small style="color: var(--color-charcoal-muted); font-size: 0.95rem;">(Just behind the Old Botanical Herbarium Garden)</small></p>
+                </div>
+              </div>
+
+              <!-- Opening Hours -->
+              <div class="detail-block">
+                <span class="detail-icon">⏳</span>
+                <div style="width: 100%;">
+                  <h3 class="detail-meta-title">Opening Days &amp; Hours</h3>
+                  <ul class="hours-list">
+                    <li><span>Tuesday – Friday:</span> <strong>08:30 – 19:00</strong></li>
+                    <li><span>Saturday – Sunday:</span> <strong>09:00 – 20:00</strong></li>
+                    <li><span>Monday:</span> <em>Closed for plant care &amp; greenhouse resting</em></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Contact & Instagram -->
+              <div class="detail-block">
+                <span class="detail-icon">☕</span>
+                <div>
+                  <h3 class="detail-meta-title">Contact &amp; Social</h3>
+                  <p class="detail-meta-text">Phone / WhatsApp: <a href="tel:+15553827491" style="color: var(--color-forest); font-weight: 600;">+1 (555) 382-7491</a><br>
+                  Instagram: <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style="color: var(--color-terracotta); font-weight: 600;">@dahliabotanicalcafe</a></p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="visit-actions">
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="get-directions-btn">Get Directions ↗</a>
+              <button class="btn btn-outline" data-modal-target="reservation-modal" id="visit-reserve-btn">Reserve a Nook</button>
+            </div>
+          </div>
+
+          <div class="visit-image-col reveal-fade-up">
+            <div class="visit-image-frame">
+              <img src="images/visit_atmosphere.jpg" alt="Warm ambient interior of Dahlia café with cozy timber seating and glowing pendant lights" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =======================================================================
+       10. FOOTER
+       ======================================================================= -->
+  <footer class="site-footer" id="site-footer">
+    <!-- Botanical Edge Decor (dark variant) -->
+    <div class="section-edge-decor edge-left edge-dark" aria-hidden="true"></div>
+    <div class="section-edge-decor edge-right edge-dark" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-brand">
+          <h2 class="footer-wordmark">DAHLIA</h2>
+          <p class="footer-closing-line">“Take a breath. Have a cup. Stay awhile.”</p>
+          <p style="font-family: var(--font-body); font-size: 1.15rem; color: var(--color-linen); opacity: 0.85;">A sanctuary where plants grow wild and coffee is poured slow.</p>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#story" class="footer-link">Our Story</a></li>
+            <li><a href="#menu" class="footer-link">Seasonal Menu</a></li>
+            <li><a href="#greenhouse" class="footer-link">The Greenhouse</a></li>
+            <li><a href="#moments" class="footer-link">Moments</a></li>
+            <li><a href="#visit" class="footer-link">Visit &amp; Hours</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Connect</h3>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram ↗</a></li>
+            <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-link">Pinterest ↗</a></li>
+            <li><a href="tel:+15553827491" class="footer-link">+1 (555) 382-7491</a></li>
+            <li><a href="mailto:hello@dahliacafe.com" class="footer-link">hello@dahliacafe.com</a></li>
+            <li><a href="#" data-modal-target="story-modal" class="footer-link">Plant Doctor Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3 class="footer-title">The Botanical Journal</h3>
+          <p>Receive monthly plant care dispatches, new harvest coffee release dates, and weekend botanical workshops.</p>
+          <form class="newsletter-form" action="#" method="POST">
+            <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Email address">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Dahlia Botanical Café &amp; Nursery. All rights reserved.
+        </div>
+        <div>
+          Designed with genuine care for peaceful living &amp; good coffee.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       11. MODALS & LIGHTBOXES
+       ======================================================================= -->
+  
+  <!-- SEARCH MODAL -->
+  <div class="modal-backdrop" id="search-modal" aria-hidden="true">
+    <div class="modal-container modal-search-container" role="dialog" aria-labelledby="modal-search-title">
+      <button class="modal-close-btn" aria-label="Close search">&times;</button>
+      <div class="search-modal-inner">
+        <span class="eyebrow" style="text-align:center; display:block; margin-bottom: 10px;">DAHLIA NURSERY + CAFÉ</span>
+        <h2 id="modal-search-title" style="font-family: 'Cinzel', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--color-forest); text-align: center; margin-bottom: 24px;">Search Dahlia</h2>
+        <div class="search-input-wrap">
+          <svg class="search-input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="search-input" class="search-input" placeholder="Search menu, dishes, drinks…" autocomplete="off" spellcheck="false">
+          <button id="search-clear-btn" class="search-clear-btn" aria-label="Clear search">&times;</button>
+        </div>
+        <div id="search-results" class="search-results"></div>
+        <p class="search-hint" id="search-hint">Start typing to search across our full menu…</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full Editorial Menu Modal -->
+  <div class="modal-backdrop" id="menu-modal" aria-hidden="true">
+    <div class="modal-container modal-wide" role="dialog" aria-labelledby="modal-menu-title">
+      <button class="modal-close-btn" aria-label="Close menu">&times;</button>
+      
+      <div style="text-align: center; margin-bottom: 36px;">
+        <span class="eyebrow">DAHLIA NURSERY + CAFÉ</span>
+        <h2 id="modal-menu-title" style="font-family: 'Cinzel', 'Ahsing', serif; font-size: clamp(2.2rem, 3.8vw, 3rem); margin-bottom: 12px; color: var(--color-forest);">Complete Menu Directory</h2>
+        <p style="font-family: 'Alice', Georgia, serif; font-size: 1.15rem; color: var(--color-charcoal-muted); max-width: 680px; margin: 0 auto;">Full botanical offerings across our kitchen, bakery, and brew bar. Sourced with care, prepared fresh daily in our glasshouse sanctuary.</p>
+      </div>
+
+      <div class="modal-menu-grid">
+        
+        <!-- SECTION 1: STARTERS -->
+        <div>
+          <h3 style="font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 16px; border-bottom: 2px solid var(--color-moss); padding-bottom: 6px; color: var(--color-forest); display: flex; justify-content: space-between; align-items: baseline;">
+            <span>STARTERS</span>
+            <small style="font-family: var(--font-editorial-sans); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--color-moss);">SMALL PLATES</small>
+          </h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px; padding: 0;">
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Bang Bang Prawns</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,095</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Crispy batter fried prawns, signature sriracha honey sauce.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Trio of Fries</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,145</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Fries in three flavours: truffle &amp; fresh mushrooms / kimchi / bolognese with mature cheddar cheese sauce.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Beiruti Hummus</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,145</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Hummus, spices, chicken, warm pita bread.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Trio of Wings</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Juicy wings in three signature sauces: sweet honey glaze / fiery hot / smoked BBQ.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Harissa Tacos</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,445</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Three soft shell tacos, harissa chicken, chipotle sauce, salsa, sour cream, pineapple.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Chicken Poppers</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,375</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Crispy chicken poppers, roasted garlic cream cheese dip.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Dirty Fries</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,325</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Hand-cut fries, spice mix, cheese, chicken cubes, mushroom sauce, sriracha mayo, melted mozzarella.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Baked Mushrooms</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,345</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Button mushroom, cream cheese, parmesan, olives, bell pepper.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Garlic Butter Prawn Skillet</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,095</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Butter poached prawns, garlic, lime, parmesan, toasted pita.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Chicken Strips</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,385</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Deep fried chicken tenders, garlic aioli dip.</p>
+            </li>
+            <li style="padding-bottom: 4px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Soup of the Day</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 795</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Daily chef preparation served with artisan bread.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SECTION 2: SALADS & DETROIT PIZZA -->
+        <div>
+          <h3 style="font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 16px; border-bottom: 2px solid var(--color-moss); padding-bottom: 6px; color: var(--color-forest); display: flex; justify-content: space-between; align-items: baseline;">
+            <span>SALAD</span>
+            <small style="font-family: var(--font-editorial-sans); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--color-moss);">GARDEN GREENS</small>
+          </h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px; padding: 0; margin-bottom: 32px;">
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Classic Caesar Salad</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,450</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Crispy greens, sun dried tomatoes, croutons, ceaser dressing, parmesan, chicken.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Quinoa Salad</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,695</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Black quinoa, mixed greens, feta cheese, red cabbage, roasted almonds, cherry tomatoes, mushrooms, balsamic dressing.</p>
+            </li>
+            <li style="padding-bottom: 4px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Square Salad</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,450</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Tomatoes, crispy beans, feta, mix greens, crispy filo sheets, chicken, tangy mustard dressing, sour cream.</p>
+            </li>
+          </ul>
+
+          <h3 style="font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 16px; border-bottom: 2px solid var(--color-moss); padding-bottom: 6px; color: var(--color-forest); display: flex; justify-content: space-between; align-items: baseline;">
+            <span>DETROIT STYLE PIZZA</span>
+            <small style="font-family: var(--font-editorial-sans); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--color-moss);">CRISPY CRUST</small>
+          </h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px; padding: 0;">
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Whipped Ricotta</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Grilled chicken, pesto, fresh whipped ricotta.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Classic Cheese</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,195</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">House special tomato sauce, mozzarella, parmesan.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Pepperonica</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Dahlia tomato sauce, pepperoni, mozzarella, parmesan.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Carnivale</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Spicy creamy red sauce, chicken, olives, onions, bell peppers, cheese.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">New York Style</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Dahlia tomato sauce, chicken, cheese, onion rings, buffalo hot sauce.</p>
+            </li>
+            <li style="padding-bottom: 4px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Bianca</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">White truffle mushroom sauce, sundried tomatoes, chicken, rocket.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SECTION 3: CHICKEN MAINS -->
+        <div>
+          <h3 style="font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 16px; border-bottom: 2px solid var(--color-moss); padding-bottom: 6px; color: var(--color-forest); display: flex; justify-content: space-between; align-items: baseline;">
+            <span>CHICKEN MAINS</span>
+            <small style="font-family: var(--font-editorial-sans); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--color-moss);">ENTREES</small>
+          </h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px; padding: 0;">
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Poulet Marrakesh</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Charcoal grilled chicken breast, marrakesh sauce, sticky garlic rice, sauteed vegetables.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Fettuccine Florentine</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,095</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Grilled chicken breast, mushroom, parmesan, florentine sauce, roasted bell pepper, leeks, fettuccine.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Fiesta Burrito Bowl (Chicken)</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,685</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Brown rice, salsa, sour cream, fresh guacamole, Mexican herbs.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Phuket</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,195</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Stir fry chicken, peanuts, basil, lemongrass, sticky rice.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Buffalo Chicken Burger</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,795</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Buffalo mayo, fried thigh chicken, tangy sauce, jalapeno, pickles, cheese, fries, coleslaw.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">The Karachi Club</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,745</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Classic gymkhana style club sandwich on whitebread with chicken, eggs, beef bacon, house sauce.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Hot Buttermilk Chicken Burger</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,795</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Buttermilk fried thigh chicken, spicy mayo, coleslaw, fries.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Parmesan Chicken</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Deep fried chicken breast, French mustard sauce, mash potatoes, sauteed vegetables.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Stuffed Chicken Roulade</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Stuffed chicken with spinach, cream cheese, mashed potatoes, sauteed vegetables.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Mac 'N' Cheese</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,695</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Classic cheesy macaroni, BBQ chicken shots, sesame seeds.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Lime Chicken Sandwich</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,525</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Lime grilled chicken, rocket, chili mayo, fries, coleslaw.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Dry Chilli Bowl (Chicken)</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Chicken, chillies, onion, capsicum, garlic rice.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Penne Arrabiata</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,595</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Penne, chili flakes, tomato sauce, parmesan.</p>
+            </li>
+            <li style="padding-bottom: 4px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Parm Chicken</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,195</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Deep fried chicken fillet, tomato sauce, mozzarella, spaghetti.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SECTION 4: BEEF & SEAFOOD MAINS -->
+        <div>
+          <h3 style="font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 16px; border-bottom: 2px solid var(--color-moss); padding-bottom: 6px; color: var(--color-forest); display: flex; justify-content: space-between; align-items: baseline;">
+            <span>BEEF CUTS &amp; BURGERS</span>
+            <small style="font-family: var(--font-editorial-sans); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--color-moss);">PRIMES</small>
+          </h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px; padding: 0; margin-bottom: 32px;">
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Gouda-Fest Smash Burger</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,095</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Double beef patty, smoked gouda, homemade sauce, pickles, jalapeno, brioche bun.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Tenderloin Steak with Confit Arugula</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 3,495</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Cured tenderloin, wilted arugula, cherry tomatoes, mushroom, fondant potatoes.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Fiesta Burrito Bowl (Beef)</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,885</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Brown rice, salsa, sour cream, fresh guacamole, Mexican herbs.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Smoked BBQ Bacon Smash Burger</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,095</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Double beef patty, beef bacon strips, sambal mayo, fries, coleslaw.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Thai Basil Beef</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Red chillies, basil, stir fry beef, sticky rice.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Spaghetti Bolognese</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,895</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Beef ragu, pomodoro sauce, basil, spaghetti.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Steak with Shiitake Mushrooms</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 3,495</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Cured tenderloin, beef potatoes croquette, creamed spinach, demi glazed mushroom sauce.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Seoul Beef Bowl</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Stir fried beef, Korean BBQ sauce, sticky rice, sunny side up egg.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Wasabi Beef Sandwich</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,895</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Roasted beef, wasabi, rocket, parmesan, pickles, fries, coleslaw.</p>
+            </li>
+            <li style="padding-bottom: 4px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Dry Chilli Bowl (Beef)</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,295</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Beef, chillies, onion, capsicum, garlic rice.</p>
+            </li>
+          </ul>
+
+          <h3 style="font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 16px; border-bottom: 2px solid var(--color-moss); padding-bottom: 6px; color: var(--color-forest); display: flex; justify-content: space-between; align-items: baseline;">
+            <span>SEAFOOD</span>
+            <small style="font-family: var(--font-editorial-sans); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--color-moss);">OCEAN HARVEST</small>
+          </h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px; padding: 0;">
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">The Tamil Prince</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,885</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Red snapper, Asian spices, grilled veggies, sticky rice.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Frutti Di Mare</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,495</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Linguine, pan seared prawns, calamari, lemon, garlic, parmesan.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Prawn Risotto</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,885</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Saffron risotto, parmesan, mushrooms, chargrilled prawns, green peas.</p>
+            </li>
+            <li style="padding-bottom: 4px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Lemon &amp; Herb Snapper</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 2,885</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Pan seared snapper, lemon, herbs, mashed potatoes.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SECTION 5: DESSERTS -->
+        <div>
+          <h3 style="font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 16px; border-bottom: 2px solid var(--color-moss); padding-bottom: 6px; color: var(--color-forest); display: flex; justify-content: space-between; align-items: baseline;">
+            <span>DESSERTS</span>
+            <small style="font-family: var(--font-editorial-sans); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--color-moss);">PÂTISSERIE</small>
+          </h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px; padding: 0;">
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Lotus French Toast <span style="font-size: 0.85rem; color: var(--color-terracotta);">(House Special)</span></strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,545</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">House baked brioche, egg bath, Lotus Biscoff, whipped cream.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Molten Lava</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,545</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Classic chocolate lava cake, melted chocolate, vanilla ice cream.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Bread Pudding</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,245</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">House baked brioche, nuts, salted caramel sauce, ice cream.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Nutella French Toast</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,545</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">House baked brioche, egg bath, Nutella sauce, bananas, caramelized popcorn.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Blueberry Cheese Cake</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,245</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Cream cheese, graham crackers, blueberries.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Tres Leches Au Chocolate</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,095</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">House baked sponge, three milks, chocolate ganache, honeycomb.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Toffee Pudding</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,245</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Spiced cake, nuts, dates, ice cream.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Warm Brownie</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,095</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Brownie, salted caramel, sea salt, ice cream.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Mini Carrot Cake</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,095</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Spiced carrot cake with cream cheese frosting.</p>
+            </li>
+            <li style="border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Mini Dark Chocolate Cake</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,095</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Rich cocoa sponge with dark chocolate ganache.</p>
+            </li>
+            <li style="padding-bottom: 4px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem;">
+                <strong style="color: var(--color-forest);">Mini Vanilla Cake</strong>
+                <span style="color: var(--color-terracotta); font-weight: 600;">Rs. 1,095</span>
+              </div>
+              <p style="font-family: 'Alice', serif; font-size: 0.95rem; color: #777; margin-top: 3px;">Madagascar vanilla bean sponge with delicate glaze.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SECTION 6: DRINKS -->
+        <div>
+          <h3 style="font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 16px; border-bottom: 2px solid var(--color-moss); padding-bottom: 6px; color: var(--color-forest); display: flex; justify-content: space-between; align-items: baseline;">
+            <span>DRINKS &amp; COFFEE</span>
+            <small style="font-family: var(--font-editorial-sans); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--color-moss);">HOT &amp; ICED</small>
+          </h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; padding: 0;">
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Americano (Hot / Iced)</span>
+              <strong style="color: var(--color-terracotta);">Rs. 785</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Café Latte (Hot / Iced)</span>
+              <strong style="color: var(--color-terracotta);">Rs. 845</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Café Latte Flavoured (Hot / Iced)</span>
+              <strong style="color: var(--color-terracotta);">Rs. 985</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Iced Caramel Macchiato</span>
+              <strong style="color: var(--color-terracotta);">Rs. 985</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">ABC Juice (Apple, Beetroot, Carrot)</span>
+              <strong style="color: var(--color-terracotta);">Rs. 945</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Fresh Juice (Seasonal)</span>
+              <strong style="color: var(--color-terracotta);">Rs. 945</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Iced Peach Tea</span>
+              <strong style="color: var(--color-terracotta);">Rs. 795</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Strawberry Mojito</span>
+              <strong style="color: var(--color-terracotta);">Rs. 795</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Iced Mocca</span>
+              <strong style="color: var(--color-terracotta);">Rs. 925</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Mint Margarita</span>
+              <strong style="color: var(--color-terracotta);">Rs. 745</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Fresh Lime</span>
+              <strong style="color: var(--color-terracotta);">Rs. 295</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Kiwi Red Bull Mojito</span>
+              <strong style="color: var(--color-terracotta);">Rs. 995</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Virgin Mojito</span>
+              <strong style="color: var(--color-terracotta);">Rs. 785</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Red Bull</span>
+              <strong style="color: var(--color-terracotta);">Rs. 625</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Tea / Green Tea</span>
+              <strong style="color: var(--color-terracotta);">Rs. 300</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; border-bottom: 1px dashed rgba(73, 55, 44, 0.15); padding-bottom: 8px;">
+              <span style="color: var(--color-forest);">Soft Drinks</span>
+              <strong style="color: var(--color-terracotta);">Rs. 195</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-family: 'Alice', serif; font-size: 1.25rem; padding-bottom: 4px;">
+              <span style="color: var(--color-forest);">Mineral Water</span>
+              <strong style="color: var(--color-terracotta);">Rs. 150</strong>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 36px; padding-top: 24px; border-top: 1px solid rgba(73, 55, 44, 0.2);">
+        <p style="font-family: var(--font-editorial-sans); font-size: 0.8rem; letter-spacing: 0.14em; color: var(--color-terracotta); margin-bottom: 20px; font-weight: 600;">*PRICES ARE EXCLUSIVE OF GST.</p>
+        <button class="btn btn-primary modal-close-btn-inline" onclick="document.getElementById('menu-modal').classList.remove('active'); document.body.style.overflow='';" style="width: auto; padding: 12px 36px;">Close Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation / Plan Your Visit Modal -->
+  <div class="modal-backdrop" id="reservation-modal" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-labelledby="modal-reserve-title">
+      <button class="modal-close-btn" aria-label="Close reservation form">&times;</button>
+      <span class="eyebrow">SLOW MORNINGS &amp; INTIMATE DATES</span>
+      <h2 id="modal-reserve-title" style="font-size: 2.6rem; margin-bottom: 16px;">Hold a Cozy Corner</h2>
+      <p style="font-size: 1.25rem; color: var(--color-charcoal-muted); margin-bottom: 28px;">We keep most of our greenhouse tables open for spontaneous walk-ins. For special dates or quiet study mornings, tell us what you need and we will have a warm nook ready for you.</p>
+
+      <form id="reservation-form" style="display: flex; flex-direction: column; gap: 20px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div>
+            <label style="display: block; font-family: var(--font-editorial-sans); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 6px; color: var(--color-moss);">Your Name</label>
+            <input type="text" required placeholder="Elena Vance" style="width: 100%; padding: 12px; border: var(--border-subtle); background: #fff; font-family: var(--font-editorial-sans); font-size: 0.9rem; border-radius: 2px;">
+          </div>
+          <div>
+            <label style="display: block; font-family: var(--font-editorial-sans); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 6px; color: var(--color-moss);">Email or WhatsApp</label>
+            <input type="text" required placeholder="elena@example.com" style="width: 100%; padding: 12px; border: var(--border-subtle); background: #fff; font-family: var(--font-editorial-sans); font-size: 0.9rem; border-radius: 2px;">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div>
+            <label style="display: block; font-family: var(--font-editorial-sans); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 6px; color: var(--color-moss);">Date</label>
+            <input type="date" required style="width: 100%; padding: 12px; border: var(--border-subtle); background: #fff; font-family: var(--font-editorial-sans); font-size: 0.9rem; border-radius: 2px;">
+          </div>
+          <div>
+            <label style="display: block; font-family: var(--font-editorial-sans); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 6px; color: var(--color-moss);">Preferred Nook</label>
+            <select style="width: 100%; padding: 12px; border: var(--border-subtle); background: #fff; font-family: var(--font-editorial-sans); font-size: 0.9rem; border-radius: 2px;">
+              <option>The Reading Nook (Near Fiddle Leaf)</option>
+              <option>The Conservatory Window Table (Two Guests)</option>
+              <option>Terracotta Bench &amp; Coffee Corner</option>
+              <option>Sunlit Garden Courtyard</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label style="display: block; font-family: var(--font-editorial-sans); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 6px; color: var(--color-moss);">Notes or Plant Inquiries</label>
+          <textarea rows="3" placeholder="Tell us if it's an anniversary, quiet reading morning, or if you'd like our plant doctor to inspect a clipping!" style="width: 100%; padding: 12px; border: var(--border-subtle); background: #fff; font-family: var(--font-editorial-sans); font-size: 0.9rem; border-radius: 2px;"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Reserve My Spot</button>
+      </form>
+
+      <div id="reservation-success" style="display: none; text-align: center; padding: 40px 20px;">
+        <span style="font-size: 3rem; color: var(--color-moss); display: block; margin-bottom: 12px;">🌿</span>
+        <h3 style="font-size: 2.2rem; color: var(--color-forest); margin-bottom: 12px;">We Have Saved Your Corner</h3>
+        <p style="font-size: 1.35rem; color: var(--color-charcoal);">Thank you. A confirmation note with arrival instructions has been sent. We look forward to welcoming you to Dahlia.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Story Modal -->
+  <div class="modal-backdrop" id="story-modal" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-labelledby="modal-story-title">
+      <button class="modal-close-btn" aria-label="Close story">&times;</button>
+      <span class="eyebrow">OUR BOTANICAL PHILOSOPHY</span>
+      <h2 id="modal-story-title" style="font-size: 2.8rem; margin-bottom: 20px;">Rooted in Quiet Care</h2>
+      <p style="font-size: 1.35rem; line-height: 1.65; color: var(--color-charcoal); margin-bottom: 20px;">Dahlia began as an abandoned 1940s glass greenhouse tucked behind an old timber workshop. When we first opened the rusted latch doors, ivy had reclaimed the beams, and sunlight fell through cracked glass panes in gentle ribbons.</p>
+      <p style="font-size: 1.35rem; line-height: 1.65; color: var(--color-charcoal); margin-bottom: 20px;">Rather than tearing down its character, we decided to preserve every scar and beam. We brought in slow-roasted coffees, invited local ceramicists to display their hand-thrown planters, and filled every wooden shelf with plants we have nurtured from saplings.</p>
+      <p style="font-size: 1.35rem; line-height: 1.65; color: var(--color-charcoal); margin-bottom: 28px;">Today, Dahlia is a sanctuary for the city: a place where you can sip an espresso, learn how to re-pot a rare philodendron, and take back a little bit of green peace into your daily life.</p>
+      
+      <div style="border-top: var(--border-subtle); padding-top: 24px; display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-family: var(--font-body); font-size: 1.4rem; color: var(--color-terracotta);">— The Dahlia Family &amp; Botanists</span>
+        <button class="btn btn-outline" onclick="document.getElementById('story-modal').classList.remove('active'); document.body.style.overflow='';">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Photo Gallery Lightbox -->
+  <div class="lightbox-backdrop" id="gallery-lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" class="lightbox-img">
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Bundle -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
